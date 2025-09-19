@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f7f9fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 100%;
+  padding: 1.2rem;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+   font-family: 'Poppins', sans-serif;
+
+}
+input{
+       font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.board {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.list {
+  background-color: #e3e4e8;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 30%;
+  min-height: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list h2 {
+  color: #555;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+   font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  background-color: white;
+  color: #333;
+  padding: 1rem;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: grab;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:active {
+  cursor: grabbing;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.list.over {
+  background-color: #d1d3d8;
+}
+
+@media (max-width: 768px) {
+  .board {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .list {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
+
+
+#task-input {
+
+    padding: 10px 14px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    width: 50%;
+    resize: none; /* disable manual resize */
+    overflow: hidden;
+}
+
+#task-input:focus {
+    border-color: #4a90e2; /* blue focus border */
+    box-shadow: 0 0 6px rgba(74, 144, 226, 0.5);
+  }
+
+#task-input::placeholder {
+    color: #999;
+    font-style: italic;
+  }
+
+#addtask {
+    display: inline-block;
+    padding: 10px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    background: #4a90e2; /* primary blue */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+    
+}
+
+#addtask:hover {
+    background: #357ab8; /* darker blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+#addtask:active {
+    background: #2d6390; /* even darker when pressed */
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+
+  

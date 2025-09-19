@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&family=Fira+Code&family=Pacifico&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kanban To Do Board</h1>
+        <input type="text" placeholder="Enter Tasks" id="task-input">
+        <button id="addtask" onclick="addTask()"><p>ADD ➕</p></button>
+      <div class="board">
+        <!-- LIST 1 -->
+        <div class="list" id="list1">
+          <h2>To Do 📃</h2>
+         
+        </div>
+
+        <!-- LIST 2 -->
+        <div class="list" id="list2">
+          <h2>In Progress ⏳</h2>
+          
+        </div>  
+
+        <!-- LIST 3 -->
+        <div class="list" id="list3">
+          <h2>Done ✅</h2>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
