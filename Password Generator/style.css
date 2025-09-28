@@ -1,13 +1,15 @@
-/* Root Colors */
+
 :root {
-  --primary-color: #2b5876;
-  --secondary-color: #4e4376;
-  --weak-color: #fc8181;
-  --medium-color: #fbd38d;
-  --strong-color: #68d391;
-  --bg-color: #f4f6fa;
-  --text-color: #333;
+  --primary-color: #799eee;      /* pastel blue */
+  --secondary-color: #c9e4de;    /* mint green */
+  --weak-color: #fbb1bd;         /* pastel pink */
+  --medium-color: #ffe3a3;       /* pastel yellow */
+  --strong-color: #b5ead7;       /* pastel teal */
+  --bg-color: #fffefd;           /* soft white */
+  --text-color: #444444;         /* neutral gray */
 }
+
+
 
 /* Reset */
 * {
